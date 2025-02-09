@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoCAD_NanoCAD_plugin", "AutoCAD_NanoCAD_plugin.vcxproj", "{A8C63A28-5D03-46F9-AF7E-343C56980B60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug ACAD|x64 = Debug ACAD|x64
+		Debug NCAD|x64 = Debug NCAD|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8C63A28-5D03-46F9-AF7E-343C56980B60}.Debug ACAD|x64.ActiveCfg = Debug ACAD|x64
+		{A8C63A28-5D03-46F9-AF7E-343C56980B60}.Debug ACAD|x64.Build.0 = Debug ACAD|x64
+		{A8C63A28-5D03-46F9-AF7E-343C56980B60}.Debug NCAD|x64.ActiveCfg = Debug NCAD|x64
+		{A8C63A28-5D03-46F9-AF7E-343C56980B60}.Debug NCAD|x64.Build.0 = Debug NCAD|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {514871F5-3AAD-4E0F-A2B0-CF01641B09C1}
+	EndGlobalSection
+EndGlobal
