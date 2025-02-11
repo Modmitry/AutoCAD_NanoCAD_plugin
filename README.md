@@ -86,5 +86,7 @@ Follow these steps to set up and build the plugin:
 ### ❌ Issue: Compilation Errors Related to Dependencies  
 ✅ **Solution**:  
 - Ensure you are using the correct **ObjectARX SDK** or **NanoCAD SDK** version.  
-- Install any missing **Visual Studio components** (`C++ Desktop Development`).  
+- Install any missing **Visual Studio components** (`C++ Desktop Development`).
 
+### Keywords  
+AutoCAD, NanoCAD, C++, Plugin, ObjectARX, SDK, CAD Development, Visual Studio, ARX, CAD Automation, CAD API, AutoCAD Extensions, AutoCAD Programming
