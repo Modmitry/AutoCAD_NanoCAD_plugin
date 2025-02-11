@@ -5,8 +5,8 @@
 This C++ plugin for AutoCAD and NanoCAD introduces custom commands to enhance user interaction.  
 
 ### Available Commands  
-- **`TEST_HELLO_CMD`**: Prints `"Hello CAD!"` in the command line.  
-- **`TEST_CIRCLE_CMD`**: Creates a circle with a default radius at a user-specified center point.  
+- **`TEST_HELLO`**: Prints `"Hello CAD!"` in the command line.  
+- **`TEST_CIRCLE`**: Creates a circle with a default radius at a user-specified center point.  
 
 ---
 
@@ -59,6 +59,13 @@ Follow these steps to set up and build the plugin:
   - `...\TestAcadProject\build\bin-x64\Debug NCAD\AutoCAD_NanoCAD_plugin.nrx` (for NanoCAD)  
 
 ### 5. Test the Commands  
-- Run:  
-  ```plaintext
-  TEST_HELLO
+ - Run TEST_HELLO to print "Hello CAD!".
+ - Run TEST_CIRCLE to create a circle at a user-defined center point.
+
+### 6. Notes
+ - Administrator Access: Running AutoCAD/NanoCAD with administrator privileges may be required.
+ - Code Customization: Modify main.cpp to add or extend functionality.
+ - 64-bit Requirements for SDK, AutoCAD/NanoCAD versions and Windows.
+
+### 7. Troubleshooting
+
