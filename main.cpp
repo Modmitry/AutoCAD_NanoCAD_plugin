@@ -27,21 +27,16 @@ void createCircle()
         return;
     }
 
-    // create the circle with default radius  
-    AcDbObjectPointer<AcDbCircle> circle;
-    if (circle.create() != Acad::eOk)
-    {
-        return;
-    }
+    // create the circle with default radius 
     constexpr double DEFAULT_RADIUS = 5;
-    circle->setRadius(DEFAULT_RADIUS);
-    circle->setCenter(center);
+    auto circle = std::make_unique<AcDbCircle>(center,AcGeVector3d::kZAxis, DEFAULT_RADIUS);
     
     // add circle to the drawing
     AcDbBlockTableRecordPointer pCurSpace(acdbCurDwg()->currentSpaceId(), AcDb::kForWrite);
     if (pCurSpace.openStatus() == Acad::eOk)
     {
-        pCurSpace->appendAcDbEntity(circle);
+        pCurSpace->appendAcDbEntity(circle.get());
+        circle.release()->close();
     }
 }
 
