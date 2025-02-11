@@ -1,3 +1,8 @@
+![AutoCAD Plugin](https://img.shields.io/badge/AutoCAD-Plugin-blue)
+![NanoCAD Plugin](https://img.shields.io/badge/NanoCAD-Plugin-green)
+![C++](https://img.shields.io/badge/C++-17-blue)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-2022-purple)
+
 # AutoCAD and NanoCAD Plugin Project  
 
 ## Overview  
