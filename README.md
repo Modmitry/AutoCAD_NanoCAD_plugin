@@ -63,9 +63,23 @@ Follow these steps to set up and build the plugin:
  - Run TEST_CIRCLE to create a circle at a user-defined center point.
 
 ### 6. Notes
- - Administrator Access: Running AutoCAD/NanoCAD with administrator privileges may be required.
- - Code Customization: Modify main.cpp to add or extend functionality.
- - 64-bit Requirements for SDK, AutoCAD/NanoCAD versions and Windows.
+ - **Administrator Access:** Running AutoCAD/NanoCAD with administrator privileges may be required.
+ - **Code Customization:** Modify main.cpp to add or extend functionality.
+ - **64-bit Requirements:** for SDK, AutoCAD/NanoCAD version and Windows.
 
 ### 7. Troubleshooting
+### ❌ Issue: Plugin Fails to Load in AutoCAD/NanoCAD  
+✅ **Solution**: Ensure the correct `.arx` or `.nrx` file is loaded via `APPLOAD`.  
+
+---
+
+### ❌ Issue: Visual Studio Cannot Find SDK  
+✅ **Solution**: Double-check `_OpenProject.bat` and verify the paths to `ACadSDK` or `NCadSDK`.  
+
+---
+
+### ❌ Issue: Compilation Errors Related to Dependencies  
+✅ **Solution**:  
+- Ensure you are using the correct **ObjectARX SDK** or **NanoCAD SDK** version.  
+- Install any missing **Visual Studio components** (`C++ Desktop Development`).  
 
