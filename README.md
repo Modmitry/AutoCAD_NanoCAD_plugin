@@ -40,39 +40,41 @@ Before setting up the project, ensure you have the following installed:
 
 Follow these steps to set up and build the plugin:  
 
-### 1. Configure the Environment  
+### 1. Download the project:
+
+### 2. Configure the Environment  
 - Open `_OpenProject.bat` and set the following variables:  
   - `ACadExe` → Path to the AutoCAD executable  
   - `ACadSDK` → Path to the ObjectARX SDK  
   - `NCadExe` → Path to the NanoCAD executable  
   - `NCadSDK` → Path to the NanoCAD SDK  
 
-### 2. Open the Project  
+### 3. Open the Project  
 - Run `_OpenProject.bat` to launch Visual Studio with the solution file (`AutoCAD_NanoCAD_plugin.sln`).  
 - In Visual Studio, select one of the following build configurations:  
   - `Debug ACAD` (for AutoCAD)  
   - `Debug NCAD` (for NanoCAD)  
 
-### 3. Build the Plugin  
+### 4. Build the Plugin  
 - Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> or go to **Build > Build Solution** in Visual Studio.  
 
-### 4. Run the Plugin  
+### 5. Run the Plugin  
 - Press <kbd>F5</kbd> to launch AutoCAD or NanoCAD from Visual Studio.  
 - In AutoCAD/NanoCAD, type `APPLOAD` in the command line.  
 - Select and load the compiled plugin file:  
-  - `...\TestAcadProject\build\bin-x64\Debug ACAD\AutoCAD_NanoCAD_plugin.arx` (for AutoCAD)  
-  - `...\TestAcadProject\build\bin-x64\Debug NCAD\AutoCAD_NanoCAD_plugin.nrx` (for NanoCAD)  
+  - `...\Plugin-for-AutoCAD-and-NanoCAD\build\bin-x64\Debug ACAD\AutoCAD_NanoCAD_plugin.arx` (for AutoCAD)  
+  - `...\Plugin-for-AutoCAD-and-NanoCAD\build\bin-x64\Debug NCAD\AutoCAD_NanoCAD_plugin.nrx` (for NanoCAD)  
 
-### 5. Test the Commands  
+### 6. Test the Commands  
  - Run TEST_HELLO to print "Hello CAD!".
  - Run TEST_CIRCLE to create a circle at a user-defined center point.
 
-### 6. Notes
+### 7. Notes
  - **Administrator Access:** Running AutoCAD/NanoCAD with administrator privileges may be required.
  - **Code Customization:** Modify main.cpp to add or extend functionality.
  - **64-bit Requirements:** for SDK, AutoCAD/NanoCAD version and Windows.
 
-### 7. Troubleshooting
+### 8. Troubleshooting
 ### ❌ Issue: Plugin Fails to Load in AutoCAD/NanoCAD  
 ✅ **Solution**: Ensure the correct `.arx` or `.nrx` file is loaded via `APPLOAD`.  
 
