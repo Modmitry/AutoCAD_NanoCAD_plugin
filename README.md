@@ -41,7 +41,7 @@ Before setting up the project, ensure you have the following installed:
 Follow these steps to set up and build the plugin:  
 
 ### 1. Download the project:
-
+- git clone https://github.com/Modmitry/Plugin-for-AutoCAD-and-NanoCAD.git
 ### 2. Configure the Environment  
 - Open `_OpenProject.bat` and set the following variables:  
   - `ACadExe` → Path to the AutoCAD executable  
